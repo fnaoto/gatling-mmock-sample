@@ -1,4 +1,4 @@
-version: 3
+version: "3"
 services:
   gatling:
     build: ./gatling
@@ -23,6 +23,7 @@ services:
       - "80:80"
   mmock:
     image: jordimartin/mmock
+    restart: always
     volumes:
       - ./mmock/config:/config
     ports:
