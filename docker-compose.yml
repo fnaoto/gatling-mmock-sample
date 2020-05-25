@@ -10,7 +10,7 @@ services:
       - ./gatling/simulations:/gatling/user-files/simulations
       - ./gatling/logback.xml:/gatling/conf/logback.xml
     environment:
-      - baseUrl=https://localhost:8082
+      - baseUrl=http://localhost:8083
       - execUsers=1
       - execSeconds=1
   nginx:
