@@ -10,7 +10,7 @@ services:
       - ./gatling/simulations:/gatling/user-files/simulations
       - ./gatling/logback.xml:/gatling/conf/logback.xml
     environment:
-      - baseUrl=http://localhost:8083
+      - baseUrl=http://mmock:8083
       - execUsers=1
       - execSeconds=1
   nginx:
@@ -29,4 +29,3 @@ services:
     ports:
       - "8082:8082"
       - "8083:8083"
-
