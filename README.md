@@ -13,3 +13,9 @@ $ docker-compose exec gatling /gatling/bin/gatling.sh
 ```sh
 $ open http://localhost:80
 ```
+
+## Check request for mmock
+
+```sh
+$ open http://localhost:8082
+```
