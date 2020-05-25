@@ -7,12 +7,12 @@ services:
     tty: true
     volumes:
       - ./gatling/results:/gatling/results:cached
-      - ./gatling/simulations:/gatling/user-files/simulations:cached
-      - ./gatling/logback.xml:/gatling/conf/logback.xml:cached
+      - ./gatling/simulations:/gatling/user-files/simulations
+      - ./gatling/logback.xml:/gatling/conf/logback.xml
     environment:
       - baseUrl=https://localhost:8082
-      - thread=1
-      - time=1
+      - execUsers=1
+      - execSeconds=1
   nginx:
     image: nginx
     restart: always
